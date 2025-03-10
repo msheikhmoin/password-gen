@@ -6,11 +6,11 @@ import os
 # Page Config
 st.set_page_config(page_title="Password Generator", page_icon="🔐", layout="centered")
 
-# Custom Styling with Glassmorphism, Neon Effect & Blue Gradient Shade
+# Custom Styling with Glassmorphism & Neon Effect
 st.markdown("""
     <style>
         body {
-            background: linear-gradient(135deg, #000000 30%, #002366 100%) !important;
+            background: #0f0f0f;
             font-family: 'Arial', sans-serif;
         }
         .title {
@@ -74,10 +74,10 @@ st.markdown("""
             text-align: center;
             font-size: 18px;
             font-weight: bold;
-            background: transparent;
+            background: transparent;  /* ✅ Transparent Background */
         }
         .footer-text {
-            background: linear-gradient(90deg, #0000ff, #0099ff);
+            background: linear-gradient(90deg,  #de3163, #0052cc);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: bold;
@@ -116,4 +116,4 @@ if st.button("Generate Password"):
     st.markdown(f"<p class='password-box'>🔑 {password}</p>", unsafe_allow_html=True)
 
 # ✅ Transparent Footer with Gradient Text
-st.markdown("<div class='footer'><span class='footer-text'> Made by Moin Sheikh</span></div>", unsafe_allow_html=True)
+st.markdown("<div class='footer'><span class='footer-text'>🚀 Made by Moin Sheikh</span></div>", unsafe_allow_html=True)
